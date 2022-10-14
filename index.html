@@ -12,14 +12,121 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,300;1,400&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Lilleberg's Portfolio</h1>
-    <p>Portfolio 2</p>
-    <div class="cards-container"></div>
+    <main>
+      <h1>Lilleberg's Portfolio</h1>
+      <p class="h1-sub">~ Portfolio 2 ~</p>
+
+      <div class="cards-container">
+        <div class="card shoes-up">
+          <h2>Shoes Up</h2>
+          <p class="h2-sub">~ Semester Project 2 ~</p>
+          <img
+            src="images/shoes-up.png"
+            alt="Screenshot of Shoes Up's homepage"
+          />
+          <a
+            href="https://github.com/lilleberg/Semester-project-2.git"
+            title="Link to JS Frameworks' GitHub repo"
+            target="_blank"
+            >View GitHub repo</a
+          >
+          <p class="desc-p1">
+            Shoes Up was created for the course Semester Project 2. It's an
+            e-commerce site selling shoes. This site is built with HTML,
+            JavaScript, Bootstrap and Sass, and Strapi is used for the backend.
+          </p>
+          <p class="desc-p2">
+            The functionalities of this site consists of viewing products as
+            well as being able to add them to a shopping cart. There is an admin
+            part, where admin can sign in (using JWT for this). If signed in,
+            admin has access to adding, editing and deleting products.
+          </p>
+        </div>
+
+        <div class="card js-frameworks">
+          <h2>JS Frameworks CA</h2>
+          <p class="h2-sub">~ JS Frameworks Course Assignment ~</p>
+          <img
+            src="images/js-frameworks-ca.png"
+            alt="Screenshot of JS Frameworks CA's homepage"
+          />
+          <a
+            href="https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-lilleberg.git"
+            title="Link to JS Frameworks' GitHub repo"
+            target="_blank"
+            >View GitHub repo</a
+          >
+          <p class="desc-p1">
+            The JS Frameworks CA was to test our React skills, such as doing API
+            calls, setting up React Router, using localStorage to save JWT for
+            login functionality. The project also has a contact form which uses
+            react hook form and yup for form and input validation. The login
+            form also makes use of this. When signed in, admin gets access to
+            the /admin path.
+          </p>
+          <p class="desc-p2">
+            To build this site I have used React and CSS. Strapi is used for the
+            backend for the login functionality.
+          </p>
+          <p class="desc-p3">
+            The project is split into several smaller components, which makes
+            the code more readable and easier to navigate. I have also created
+            reusable components where it is practical, like for navigation and
+            headings (this is something we have been taught to do).
+          </p>
+        </div>
+
+        <div class="card holidaze">
+          <h2>Holidaze</h2>
+          <p class="h2-sub">~ Project Exam 2 ~</p>
+          <img
+            src="images/holidaze.png"
+            alt="Screenshot of Holidaze's homepage"
+          />
+          <a
+            href="https://github.com/Noroff-FEU-Assignments/project-exam-2-lilleberg.git"
+            title="Link to JS Frameworks' GitHub repo"
+            target="_blank"
+            >View GitHub repo</a
+          >
+          <a
+            href="https://holidaze-pe2-mh.netlify.app/"
+            title="Link to JS Frameworks' GitHub repo"
+            target="_blank"
+            >View live site</a
+          >
+          <p class="desc-p1">
+            Holidaze, aka Project Exam 2, is the result of two years studying
+            front-end. The brief was to create a website where users can book
+            hotels, B&B's and guesthouses in the Bergen area. As well as sending
+            booking enquiries to an establishment, users can also send in a
+            contact form to Holidaze. There is also an admin part to the
+            assignment where an admin can sign in to view booking enquiries,
+            contact messages and add a new establishment. The homepage has a
+            search bar typeahead which links to the establishment you click on
+            in the dropdown menu.
+          </p>
+          <p class="desc-p2">
+            To build this website I have used React, Bootstrap and Sass. Strapi
+            is used for the API's, and is hosted on Heroku. For forms I have
+            used react hook form and yup validation. For the API calls I have
+            used axios, except for when adding a new establishment as axios and
+            FormData wouldn't work together - fetch worked fine though. The
+            search bar typeahead is from an NPM package. I have also used
+            another NPM package, helmet, for setting title and meta description
+            on the pages.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

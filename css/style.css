@@ -11,15 +11,109 @@ body {
   font-family: "Source Sans Pro", "Segoe UI", Tahoma, Geneva, Verdana,
     sans-serif;
   background-color: var(--bg-color);
+  margin: 20px;
+}
+
+img {
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* typography */
+h1,
+.h1-sub {
   color: #fff;
 }
 
 h1,
-h2 {
+h2,
+a {
   font-weight: 400;
+}
+
+p {
+  font-weight: 300;
 }
 
 p,
 a {
-  font-weight: 300;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  font-style: italic;
+  color: rgb(0, 0, 0);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h1,
+h2 {
+  margin-bottom: 5px;
+}
+
+h1,
+h2,
+.h1-sub,
+.h2-sub {
+  text-align: center;
+}
+
+/* cards */
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: 2.5rem auto 0 auto;
+  max-width: 600px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid rgb(29, 121, 197);
+  border-radius: 5px;
+}
+
+.holidaze a {
+  display: block;
+}
+
+.desc-p1 {
+  margin: 20px 0 10px 0;
+}
+
+.desc-p3 {
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .cards-container {
+    flex-direction: row;
+    max-width: 100%;
+    gap: 20px;
+  }
+
+  .card {
+    flex: 1;
+    height: fit-content;
+  }
 }
